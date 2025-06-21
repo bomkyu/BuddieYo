@@ -12,7 +12,7 @@ build/
 
 # Docker 관련
 docker-compose.override.yml
-**/Dockerfile
+
 
 # OS 관련
 .DS_Store
