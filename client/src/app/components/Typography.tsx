@@ -1,7 +1,10 @@
+import { JSX } from 'react';
+
 type Typography = {
   children: React.ReactNode;
   weight?: 'medium' | 'normal' | 'semibold' | 'bold';
   size?: 'sm' | 'base' | 'lg' | 'xl' | '2xl';
+  as?: keyof JSX.IntrinsicElements; // 'p' | 'span' | 'h1' 등 태그 지정
 };
 
 const weightClassMap = {
@@ -23,11 +26,16 @@ const Typography = ({
   children,
   weight = 'medium',
   size = 'base',
+  as: Component = 'p',
 }: Typography) => {
   const fontWeightClass = weightClassMap[weight];
   const sizeClass = sizeClassMap[size];
 
-  return <p className={`${fontWeightClass} ${sizeClass}`}>{children}</p>;
+  return (
+    <Component className={`${fontWeightClass} ${sizeClass}`}>
+      {children}
+    </Component>
+  );
 };
 
 export default Typography;
