@@ -1,4 +1,4 @@
 const Home = () => {
-  return <div style={{ fontSize: 48 }}>아오 ㅋㅋ</div>;
+  return <div style={{ fontSize: 48 }}>test</div>;
 };
 export default Home;
