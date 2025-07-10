@@ -4,6 +4,7 @@ type Typography = {
   children: React.ReactNode;
   weight?: 'medium' | 'normal' | 'semibold' | 'bold';
   size?:
+    | 'xs'
     | 'sm'
     | 'base'
     | 'lg'
@@ -27,6 +28,7 @@ const weightClassMap = {
 } as const;
 
 const sizeClassMap = {
+  xs: 'text-xs',
   sm: 'text-sm',
   base: 'text-base',
   lg: 'text-lg',
