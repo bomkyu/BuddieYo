@@ -40,7 +40,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={predendard.className}>{children}</body>
+      <body className={predendard.className}>
+        {children}
+        <div id='modal-layout'></div>
+      </body>
     </html>
   );
 }
