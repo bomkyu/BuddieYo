@@ -1,4 +1,4 @@
 const Home = () => {
-  return <div style={{ fontSize: 48 }}>test</div>;
+  return <div className='pt-5'>asd</div>;
 };
 export default Home;
