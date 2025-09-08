@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
 import './globals.css';
+import LayoutWrapper from './LayoutWrapper';
 
 const predendard = localFont({
   src: [
@@ -41,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={predendard.className}>
-        {children}
+        <LayoutWrapper>{children}</LayoutWrapper>
         <div id='modal-layout'></div>
       </body>
     </html>
