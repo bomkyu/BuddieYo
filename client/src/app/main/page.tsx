@@ -4,7 +4,7 @@ import TabItem from '../components/tab/components/TabItem';
 import Tab from '../components/tab/Tab';
 import Typography from '../components/Typography';
 
-/* NOTE : 25/09/03 작업 | 메인페이지 */
+/* NOTE : 25/09/08 작업 | 메인페이지 */
 
 const Main = () => {
   return (
